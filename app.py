@@ -1,4 +1,4 @@
-#Greendeck Assignment by Yashraj Nigam
+#Greendeck Task by Yashraj Nigam
 
 #Get JSON data from Google Drive public link
 import gdown
