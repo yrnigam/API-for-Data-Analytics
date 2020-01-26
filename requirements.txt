@@ -1,0 +1,4 @@
+pandas>=0.20
+flask==1.1.1
+gdown>=3.5
+gunicorn==19.9.0
