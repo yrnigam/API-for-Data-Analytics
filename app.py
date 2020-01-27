@@ -6,6 +6,12 @@ url = 'https://drive.google.com/a/greendeck.co/uc?id=19r_vn0vuvHpE-rJpFHvXHlMvxa
 output = 'netaporter_gb.json'
 gdown.download(url, output, quiet=False)'''
 
+
+#Ignoring warnings
+import warnings
+from pandas.core.common import SettingWithCopyWarning
+warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
+
 """#**Importing JSON file into notebook**"""
 
 import pandas as pd
