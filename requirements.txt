@@ -1,3 +1,4 @@
 pandas>=0.20
 flask==1.1.1
 gunicorn==19.9.0
+warnings>=27.3
