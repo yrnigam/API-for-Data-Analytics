@@ -1,4 +1,4 @@
-#Greendeck Task by Yashraj Nigam
+
 
 #Get JSON data from Google Drive public link
 '''import gdown
@@ -15,7 +15,7 @@ warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
 """#**Importing JSON file into notebook**"""
 
 import pandas as pd
-data=pd.read_json("https://greendeck-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json",lines=True,orient='columns')
+data=pd.read_json("https://****-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json",lines=True,orient='columns')
 
 """##Creating percentage discount,Brand name,Competiton,Product_id column in dataframe"""
 
@@ -60,7 +60,7 @@ from flask import Flask,request,redirect,jsonify,make_response
 app = Flask(__name__)
 @app.route("/")
 def home():
-    return "<h1>GreenDeck Assignment Yashraj Nigam</h1>"
+    return "<h1> Yashraj Nigam</h1>"
 
                                                                                             #TASK 1
 @app.route("/json",methods=["POST"])
