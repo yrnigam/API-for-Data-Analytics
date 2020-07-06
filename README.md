@@ -53,12 +53,12 @@ Response
 
 NAP monitors five competing websites. They have the following website_ids
 
-WEBSITE_ID_HASH["netaporter_gb"] = "5da6d40110309200045874e6" 
-WEBSITE_ID_HASH["farfetch_gb"] = "5d0cc7b68a66a100014acdb0"
-WEBSITE_ID_HASH["mytheresa_gb"] = "5da94e940ffeca000172b12a" 
-WEBSITE_ID_HASH["matchesfashion_gb"] = "5da94ef80ffeca000172b12c" 
-WEBSITE_ID_HASH["ssense_gb"] = "5da94f270ffeca000172b12e" 
-WEBSITE_ID_HASH["selfridges_gb"] = "5da94f4e6d97010001f81d72"
+WEBSITE_ID_HASH["netaporter_gb"] = "5da6d40110309200045874e6"  
+WEBSITE_ID_HASH["farfetch_gb"] = "5d0cc7b68a66a100014acdb0"  
+WEBSITE_ID_HASH["mytheresa_gb"] = "5da94e940ffeca000172b12a"  
+WEBSITE_ID_HASH["matchesfashion_gb"] = "5da94ef80ffeca000172b12c"  
+WEBSITE_ID_HASH["ssense_gb"] = "5da94f270ffeca000172b12e"  
+WEBSITE_ID_HASH["selfridges_gb"] = "5da94f4e6d97010001f81d72"  
 
 NAP products are matched to their competition using a website_id. You can find the website_id as a key inside the website_results dictionary inside each NAP object. The task is to find the products which are being sold at a price 10% greater than their competitor called Farfetch.
 Request-body{ "query_type": "competition_discount_diff_list", 
