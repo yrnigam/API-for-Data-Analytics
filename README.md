@@ -1,4 +1,6 @@
 # API-for-Data-Analytics-Yoox Group
+![YOOX Image](https://images.businessoffashion.com/site/uploads/2015/09/yoox2.jpg?auto=format%2Ccompress&crop=top&fit=crop&h=576&w=1023)
+
 ## The Story
 In the fashion industry, there are brands that manufacture and retailers that sell. Each brand usually partners with multiple retailers to sell their inventory. So, it may happen that there is a product that is being sold at multiple retailers. 
 The retailers need to set the correct price in order to win over the customer and also take care of the fact that they don't lose out on profits. They have to keep a watch on both their own and their competition's pricing strategy. There is a ton of data that every retailer has to gather to make better pricing decisions. They track the brands, availability and prices among other  for each product.
