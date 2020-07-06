@@ -2,7 +2,7 @@
 
 #Get JSON data from Google Drive public link
 '''import gdown
-url = 'https://drive.google.com/a/greendeck.co/uc?id=19r_vn0vuvHpE-rJpFHvXHlMvxa8UOeom&export=download'
+url = 'https://drive.google.com/uc?id=1-2ay9VpIc4S_q6DPJlGByqmzdGf_QSFg&export=download'
 output = 'netaporter_gb.json'
 gdown.download(url, output, quiet=False)'''
 
