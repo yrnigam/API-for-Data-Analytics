@@ -1,10 +1,10 @@
 
 
 #Get JSON data from Google Drive public link
-'''import gdown
+import gdown
 url = 'https://drive.google.com/uc?id=1-2ay9VpIc4S_q6DPJlGByqmzdGf_QSFg&export=download'
 output = 'netaporter_gb.json'
-gdown.download(url, output, quiet=False)'''
+gdown.download(url, output, quiet=False)
 
 
 #Ignoring warnings
@@ -15,7 +15,7 @@ warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
 """#**Importing JSON file into notebook**"""
 
 import pandas as pd
-data=pd.read_json("https://****-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json",lines=True,orient='columns')
+data=pd.read_json("netaporter_gb.json",lines=True,orient='columns')
 
 """##Creating percentage discount,Brand name,Competiton,Product_id column in dataframe"""
 
