@@ -4,7 +4,7 @@ In the fashion industry, there are brands that manufacture and retailers that se
 The retailers need to set the correct price in order to win over the customer and also take care of the fact that they don't lose out on profits. They have to keep a watch on both their own and their competition's pricing strategy. There is a ton of data that every retailer has to gather to make better pricing decisions. They track the brands, availability and prices among other  for each product.
 Net-a-porter (NAP) is a famous retailer in Europe. They have identified five competing retailers and have mapped each product in their own inventory with a similar product on their competition's catalogue. This is where you come in. The team at Net-a-porter has a few queries they want answered. They need a flask app that processes and analyses the data and helps them in making day-to-day pricing decisions.
 
-1. NAP products where discount is greater than n%
+## 1. NAP products where discount is greater than n%
 They want a list of NAP product ids (field name: _id) where the discount% is greater than n%. Discount is calculated as the difference of regular_price and offer_price. Both the values can be found inside the price dictionary
 
 Request-body 
@@ -23,7 +23,7 @@ Response
 
 
 
-2. Count of NAP products from a particular brand and its average discount
+## 2. Count of NAP products from a particular brand and its average discount
 They want the count of NAP products from a particular brand. They would also like to know the average discount they are giving to their customers. Discount to be calculated as before.
 
 Request-body 
@@ -35,7 +35,7 @@ Test 2: POST { "query_type": "discounted_products_count|avg_discount", "filters"
 Response
 { "discounted_products_count": 11234, "avg_dicount": 0.06 }
 
-3. NAP products where they are selling at a price higher than any of the competition.
+## 3. NAP products where they are selling at a price higher than any of the competition.
 
 They want to know the list of products where they are being undercut by their competition. You can find the expensive products by comparing basket_price of NAP product with its competition. which you can find inside the price dictionary. As mentioned before, there are some NAP products that may have a field called similar_products which consists of the matching product being sold on their competitor's website. The JSON structure of the matching product is similar to the NAP product. You will find the fields name, brand, price etc. inside the _source field inside website_results field. 
 
@@ -49,7 +49,7 @@ Response
 { "expensive_list": ["", "", ""] } list of _id for NAP products
 
 
-4. NAP products where they are selling at a price n% higher than a competitor X.
+## 4. NAP products where they are selling at a price n% higher than a competitor X.
 
 NAP monitors five competing websites. They have the following website_ids
 WEBSITE_ID_HASH["netaporter_gb"] = "5da6d40110309200045874e6" 
@@ -66,3 +66,6 @@ Request-body{ "query_type": "competition_discount_diff_list",
 "competition" the id corresponding to the competitor, it is the key inside the "website_results" dictionary
 Response
 { "competition_discount_diff_list": ["", "", ""] } list of _id for NAP products
+
+
+## API SHOULD BE DEPLOYED ON CLOUD AND TESTED SUCCESSFULLY.
